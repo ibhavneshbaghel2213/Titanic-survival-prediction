@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1> Titanic Survival Predictor</h1>
+        <form action='/predict' method="POST">
+            Pclass: <input type='text' name='Pclass'><br>
+            Sex: <input type='text' name='Sex'><br>
+            Age: <input type='text' name='Age'><br>
+            SibSp: <input type='text' name='SibSp'><br>
+            Parch: <input type='text' name='Parch'><br>
+            Fare: <input type='text' name='Fare'><br>
+            Class: {{result}} <br>
+            <input type='submit' value='Predict'>
+        </form>
+    </body>
+</html>
+
+
