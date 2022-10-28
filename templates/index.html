@@ -1,17 +1,64 @@
 <html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                background-color: powderblue;
+                text-align: center;
+            }
+            .form_class {
+                outline-style: inset;
+            }
+            .btn-block {
+                margin-top: 10px;
+                text-align: center;
+                }
+                button {
+                width: 150px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px; 
+                background:  #669999;
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+                }
+                button:hover {
+                background:  #a3c2c2;
+                }
+                input {
+                        width: 150px;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 5px; 
+                        background:  #669999;
+                        font-size: 18px;
+                        color: #fff;
+                        cursor: pointer;
+                        }
+                        button:hover {
+                        background:  #a3c2c2;
+                }
+        </style>
+    </head>
     <body>
-        <h1> Titanic Survival Predictor</h1>
-        <form action='/predict' method="POST">
-            Pclass: <input type='text' name='Pclass'><br>
-            Sex: <input type='text' name='Sex'><br>
-            Age: <input type='text' name='Age'><br>
-            SibSp: <input type='text' name='SibSp'><br>
-            Parch: <input type='text' name='Parch'><br>
-            Fare: <input type='text' name='Fare'><br>
-            Class: {{result}} <br>
-            <input type='submit' value='Predict'>
-        </form>
+        <div Class = "Body">
+            <h1> Titanic Survival Predictor</h1>
+            <form class= "form_class" action='/predict' method="POST">
+            Pclass:<br> <input type='text' name='Pclass'><br><br>
+            Sex:<br> <input type='text' name='Sex'><br><br>
+            Age:<br> <input type='text' name='Age'><br><br>
+            SibSp:<br> <input type='text' name='SibSp'><br><br>
+            Parch: <br><input type='text' name='Parch'><br><br>
+            Fare:<br> <input type='text' name='Fare'><br><br>
+            <div class="btn-block">
+                <button type="submit" value='predict'>Submit</button>
+            </div><br><br>
+            {{result}} <br><br><br>
+            </form>
+        </div>
     </body>
-</html>
+</html> 
 
 
